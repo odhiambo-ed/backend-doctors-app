@@ -85,7 +85,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["BACKEND_DOCTORS_APP_DATABASE_URL"] %>
+  url: <%= ENV["DATABASE_URL"] %>
   database: backend_doctors_app_production
   username: backend_doctors_app
   password: <%= ENV["BACKEND_DOCTORS_APP_DATABASE_PASSWORD"] %>
